@@ -17,6 +17,10 @@ app.get('/', (req, res) => {
 app.post('/api/scraper', urlencodedparser, async (req, res) => {
     const keyword = req.query.keyword
 
+    if (!keyword) {
+        return res.status(400).json({ error: 'Missing keyword in query parameter' })
+    }
+
     /* Uses the 'get' method from axios to make an HTTP request via the URL using the given word
      then uses Cheerio to load the data brought by axios and parse the data
     */
