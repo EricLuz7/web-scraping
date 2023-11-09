@@ -3,7 +3,7 @@ const axios = require('axios')
 const cheerio = require('cheerio')
 
 const app = express()
-app.set('view engine', 'ejs')
+//app.set('view engine', 'ejs')
 
 const bodyParser = require('body-parser')
 const urlencodedparser = bodyParser.urlencoded({ extended: false })
