@@ -1,47 +1,30 @@
-Web Scraping App
+# Web Scraping App
 
-This is a simple web scraping application using Node.js and Express. It fetches product information from Amazon based on a user-provided keyword.
+A simple web scraping application using Node.js, Express, Axios, and Cheerio.
 
-Setup Instructions
-Clone the Repository:
+## Setup
 
-bash
-Copy code
-git clone https://github.com/your-username/web-scraping-app.git
-Install Dependencies:
+1. Clone the repository:
 
-Navigate to the project directory and install the required dependencies.
+    ```bash
+    git clone https://github.com/seu-usuario/nome-do-repositorio.git
+    ```
 
-bash
-Copy code
-cd web-scraping-app
-npm install
-Run the Application:
+2. Navigate to the project folder:
 
-Start the Express server.
+    ```bash
+    cd nome-do-repositorio
+    ```
 
-bash
-Copy code
+3. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+## Running the App
+
+Run the following command to start the server:
+
+```bash
 npm start
-The server will run on http://localhost:3000.
-
-How to Use
-Access the application by visiting http://localhost:3000 in your web browser.
-
-You will see a search form on the home page. Enter a search keyword and click the "Send" button.
-
-The application will scrape Amazon for products related to the entered keyword and display the results on a new page.
-
-Note that the results may vary, and the information is not 100% reliable.
-
-To perform another search, you can use the "Go Back and Scrape Again" button.
-
-Dependencies
-Express: Fast, unopinionated, minimalist web framework for Node.js.
-Axios: Promise-based HTTP client for the browser and Node.js.
-Cheerio: Fast, flexible, and lean implementation of core jQuery for the server.
-Contributing
-Feel free to contribute to the project by opening issues or submitting pull requests. Your feedback is valuable!
-
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
