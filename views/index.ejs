@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping App</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+            background-color: #f2f2f2;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            border: 2px solid #3498db;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #2779b5;
+        }
+
+        p {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="api/scraper" method="GET">
+        <input type="text" placeholder="Search" name="keyword">
+        <input type="submit" value="Send" id="Search">
+    </form>
+    
+    <p>Note: The results may vary and are not 100% reliable.</p>
+
+    <script>
+        // Gets the keyword in the form and sends to the backend
+        document.getElementById('Search').addEventListener('click', function (event) {
+            event.preventDefault();
+            const keyword = document.getElementsByName('keyword')[0].value;
+            window.location.href = `/api/scraper?keyword=${keyword}`;
+        });
+    </script>
+</body>
+
+</html>
