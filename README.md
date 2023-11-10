@@ -30,7 +30,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed
 Run the following command to start the server:
 
 ```bash
-nodemon
+node index.js
 ```
 Open your browser and go to http://localhost:3000 to access the web scraping app.
 
