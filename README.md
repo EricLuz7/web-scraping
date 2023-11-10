@@ -1,6 +1,6 @@
 # Web Scraping App
 
-A simple [Amazon](https://amazon.com/) search results web scraping application using Node.js, Express, Axios,Cheerio and Body-parser.
+A simple [Amazon](https://amazon.com/) search results web scraping application using Node.js, Express, Axios, Cheerio and Body-parser.
 
 ## Setup
 
