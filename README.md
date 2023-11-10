@@ -22,6 +22,7 @@ Make sure you have [Node.js](https://nodejs.org/) installed
 
     ```bash
     npm install express axios cheerio nodemon body-parser
+    npm init
     ```
 
 ## Running the App
